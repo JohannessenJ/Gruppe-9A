@@ -1,104 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
+<meta charset="UTF-8">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Visittkort</title>
-
     <style>
-        body{
-            background-color: #001f3f;
+
+body {
+background-color: #EFF8FB;
+}
+
+.button {
+  background-color: #ADD8E6;
+  border: 3px solid black;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 10px 10px;
+  height:40px;
+  width:180px;
+  }
+
+.button-round {
+border-radius: 10px;
+}
+
+/*Hover effect from elion*/
+.button:hover {
+            color: #FFFFFF;
         }
 
-        h1{
-            text-align: center;
+.grid-container {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+}
+
+.card {
+  width: 100%;
+  height: 250px;
+  border: 3px solid black;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+ }
+
+ .headline{
+  font-size: 35px;
+ }
+
+ #grey{
+ background-color:#C5CBC6;
         }
 
-        .box {
-            border-style: solid;
-            border-color: red;
-            border-width: 5px;
-            text-align: center;
-            Border-radius: 10px;
-            background:black;
-            margin: 25px 500px 75px 500px;
-            width: 330px;
-            height: 250px;
+ #purple{
+ background-color:#3274;
         }
 
-
-
-        h1 {
-            font-family:monospace;
+#pink{
+ background-color:#FFC8C8;
         }
 
-        #thumbnail{
-            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+#green{
+ background-color:#D1FFB3;
         }
 
-
-        #floatbox{
-            float:left;
-            background:black;
-            margin: 50px;
+#orange{
+ background-color:#F8B584;
         }
 
-
-        .button{
-            width: 200px;
-            height: 75px;
-            color: white;
-            font-family: monospace;
-            background-color: #2ECC40;
-            border-radius: 5px;
-            box-shadow: inset 0 0 0 0 #f9e506;
-            transition: ease-out 0.3s;
-            font-size: 2rem;
-            outline: none;
+#blue{
+ background-color:#67C7E2;
         }
 
-        .button:hover {
-            box-shadow: inset 300px 0 0 0 #3D9970;
-            cursor: pointer;
-            color: #000000;
+#yellow{
+ background-color:#FFDD75;
         }
 
 
-    </style>
+
+
+
+
+</style>
 </head>
 <body>
 
-<div>
-    <h1 class="center" style="color:white" id="thumbnail">Gruppe 9A </h1>
+
+<center><h1 style="font-size:80px">Gruppe 9A</h1>
+
+    <h2>Hvem er vi?</h2>
+
+
+
+    <br>
+    <a href="how-we-roll.html" class="button button-round"><b>How we roll</b></a>
+    <a href="hwr-report.html" class="button button-round"><b>Hwr - report</b></a>
+    </br> <!--!linebreak-->
+
+</center>
+<br></br>
+<div class="grid-container"> <!--What makes the cards display in a grid-->
+    <div class="card" id="yellow">
+        <p><div class="headline"> <b>Jørgen Bache Johannessen</b></p></div>
+        <p>By:...</p>
+        <p> Interesser...	</p>
+        <p> Favorittfag:...	</p>
+
+    </div>
+
+    <div class="card" id="grey">
+        <p><div class="headline"> <b>Elion Muriqi</b></p></div>
+        <p>By:...</p>
+        <p>Interesser:...</p>
+        <p> Favorittfag:...	</p>
+
+    </div>
+
+    <div class="card" id="purple">
+        <p><div class="headline"> <b>Psyra O Sanchez</b></p></div>
+        <p>By:...</p>
+        <p>Interesser:...</p>
+        <p> Favorittfag:...	</p>
+
+    </div>
+
+    <div class="card" id="pink">
+        <p><div class="headline"> <b>Julie Nyland Larsen</b></p></div>
+        <p>By: Kristiansand</p>
+        <p>Interesser: Foto/ kunst</p>
+        <p> Favorittfag: Foto og trykk	</p>
+
+    </div>
+
+    <div class="card" id="green">
+        <p><div class="headline"> <b>Madyan Alkarmo</b></p></div>
+        <p>By:...</p>
+        <p>Interesser:...</p>
+        <p> Favorittfag:...	</p>
+
+    </div>
+
+    <div class="card" id="orange">
+        <p><div class="headline"> <b>Thomas Berntsen</b></p></div>
+        <p>By:...</p>
+        <p>Interesser:...</p>
+        <p> Favorittfag:...	</p>
+
+    </div>
+
+    <div class="card" id="blue">
+        <p><div class="headline"> <b>Christoffer Buvik</b></p></div>
+        <p>By:...</p>
+        <p>Interesser:...</p>
+        <p> Favorittfag: Foto og trykk	</p>
+
+    </div>
+
+
+
 </div>
 
 
-<div id="floatbox" class="box"  >
-    <h2 style="color:white">Elion Muriqi</h2>
-    <p style="color:white"><strong>By</strong>: Kristiansand</p>
-    <p style="color:white"> <strong>Favorittfag</strong>: Gym og Sosiologi</p>
-    <p style="color:white"> <strong>Hobby</strong>: Trene</p>
-</div>
-<div id="floatbox" class="box">
-    <h2 style="color:white">Thomas Berntsen</h2>
-    <p style="color:white"><strong>By</strong>: Farsund</p>
-    <p style="color:white"> <strong>Favorittfag</strong>: Matte</p>
-    <p style="color:white"> <strong>Hobby</strong>: Gaming</p>
-</div>
-<div id="floatbox" class="box">
-    <h2 style="color:white">Jørgen Johannessen</h2>
-    <p style="color:white"><strong>By</strong>: Haslum</p>
-    <p style="color:white"> <strong>Favorittfag</strong>: Gym</p>
-    <p style="color:white"> <strong>Hobby</strong>: Fotball & Trening</p>
-</div>
-
-
-
-
-<div>
-    <a>
-        <button class="button">How we roll</button>
-    </a>
-</div>
 
 
 </body>
