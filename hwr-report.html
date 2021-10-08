@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TITTEL</title>
+    <title>Data fra JSON-fil</title>
     <style>
-     <!-- Her kan stil defineres (vi skal bruke Cascading Style Sheets) -->
+
+        body {
+            text-align: center;
+        }
+        p{
+            align: right;
+        }
     </style>
     <!--
+
        [[[[[[[[     [[[[[[[[        [[[[   [[[[   [[[[  [[[[
        [::::::[    [::[             [::[   [::[   [::[  [::[
          [::[      [::[             [::[   [::[   [::[  [::[
@@ -16,21 +23,150 @@
          [::[          [::[         [::[   [::[         [::[
        [::::::[        [::[         [::[   [::[         [::[
        [[[[[[[[   [[[[[[[[          [[[[   [[[[         [[[[
+
     -->
 </head>
 <body>
+<div id="debug"></div>
+<canvas id="report" height=500 width=600></canvas>
 <!-- Her skrives alt innhold, som man ønsker å "tegne" på skjermen. -->
-
 <script>
+    <!-- Her skrives kode i JavaScript som "gir liv" til bilde på skjermen. -->
 
-    fetch('https://bacit.info/hwr/20210926134925-47352fbdecddd9a754001f4e4abbf40f.json')
-    .then(response => response.json())
-    .then(data => console.log(data));
+    var canvas = document.getElementById('report');
+    var context = canvas.getContext('2d');
 
-    fetch('https://bacit.info/hwr/20210926162029-a89356bb617d3bbf870649c08570427e.json')
-    .then(response => response.json())
-    .then(data => console.log(data));
 
-  </script>
-</body>
-</html>
+    fetch("https://bacit.info/hwr/20211007121053-48a52dde5482ae20e6a68481cec8525d.json", {cache: 'no-cache'})
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            document.querySelector("#debug").innerText = data.data01 + " " + data
+                .dorn + " " + data.cora + " " + data.vort + " " + data.iore;
+
+
+            context.font = '14px serif';
+            context.fillText('dorn', 30, 24);
+            context.fillText('cora', 30, 74);
+            context.fillText('vort', 30, 124);
+            context.fillText('iore', 30, 174);
+
+            context.beginPath();
+            context.moveTo(70,20);
+            context.lineTo(170,20);
+
+            //context.beginPath();
+            context.moveTo(70,70);
+            context.lineTo(170,70);
+            context.stroke();
+
+            context.moveTo(70,120);
+            context.lineTo(170,120);
+            context.stroke();
+
+            context.moveTo(70,170);
+            context.lineTo(170,170);
+            context.stroke();
+
+
+            var X = 70 + parseInt(data.dorn, 10);
+            var Y = 20;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+            //context.closePath();
+
+            var X = 70 + parseInt(data.cora, 10);
+            var Y = 70;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 70 + parseInt(data.vort, 10);
+            var Y = 120;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+
+            var X = 70 + parseInt(data.iore, 10);
+            var Y = 170;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "red";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+        });
+
+    // fetch test
+    fetch("https://bacit.info/hwr/20211007133754-d48ab1940b3a4884d6f90c817d72813e.json", {cache: 'no-cache'})
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            document.querySelector("#debug").innerText = data.data01 + " " + data
+                .dorn + " " + data.cora + " " + data.vort + " " + data.iore;
+
+            var X = 70 + parseInt(data.dorn, 10);
+            var Y = 20;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "lightgreen";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+            //context.closePath();
+
+            var X = 70 + parseInt(data.cora, 10);
+            var Y = 70;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "lightgreen";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 70 + parseInt(data.vort, 10);
+            var Y = 120;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2 * Math.PI, false);
+            context.fillStyle = "lightgreen";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+      
+            var X = 70 + parseInt(data.iore, 10);
+            var Y = 170;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "lightgreen";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
