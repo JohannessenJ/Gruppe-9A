@@ -28,7 +28,7 @@
 </head>
 <body>
 <div id="debug"></div>
-<canvas id="report" height=500 width=600></canvas>
+<canvas id="report" height=800 width=900></canvas>
 <!-- Her skrives alt innhold, som man ønsker å "tegne" på skjermen. -->
 <script>
     <!-- Her skrives kode i JavaScript som "gir liv" til bilde på skjermen. -->
@@ -45,47 +45,47 @@
 
 
             context.font = '14px serif';
-            context.fillText('Morgenfugl', 30, 24);
-            context.fillText('Jobbe med det sammen', 30, 74);
-            context.fillText('Video chat', 30, 124);
-            context.fillText('Introvert', 30, 174);
-            context.fillText('Ekstrovert', 30, 224);
-            context.fillText('Gjør meg en del av prosessen', 30, 274);
+            context.fillText('Morgenfugl', 120, 24);
+            context.fillText('Jobbe med det sammen', 60, 74);
+            context.fillText('Video chat', 130, 124);
+            context.fillText('Introvert', 140, 174);
+            context.fillText('Ekstrovert', 130, 224);
+            context.fillText('Gjør meg en del av prosessen', 25, 274);
 
-            context.fillText('Nattugle', 180, 24);
-            context.fillText('Gå for seg selv og tenke', 180, 74);
-            context.fillText('Tekste', 180, 124);
-            context.fillText('Ekstrovert', 180, 174);
-            context.fillText('Jobbe på skolen', 180, 224);
-            context.fillText('Fortell meg hva jeg skal gjøre', 180, 274);
+            context.fillText('Nattugle', 310, 24);
+            context.fillText('Gå for seg selv og tenke', 310, 74);
+            context.fillText('Tekste', 310, 124);
+            context.fillText('Ekstrovert', 310, 174);
+            context.fillText('Jobbe på skolen', 310, 224);
+            context.fillText('Fortell meg hva jeg skal gjøre', 310, 274);
 
             context.beginPath();
-            context.moveTo(70,20);
-            context.lineTo(170,20);
+            context.moveTo(200,20);
+            context.lineTo(300,20);
 
             //context.beginPath();
-            context.moveTo(70,70);
-            context.lineTo(170,70);
+            context.moveTo(200,70);
+            context.lineTo(300,70);
             context.stroke();
 
-            context.moveTo(70,120);
-            context.lineTo(170,120);
+            context.moveTo(200,120);
+            context.lineTo(300,120);
             context.stroke();
 
-            context.moveTo(70,170);
-            context.lineTo(170,170);
+            context.moveTo(200,170);
+            context.lineTo(300,170);
             context.stroke();
 
-            context.moveTo(70,220);
-            context.lineTo(170,220);
+            context.moveTo(200,220);
+            context.lineTo(300,220);
             context.stroke();
 
-            context.moveTo(70,270);
-            context.lineTo(170,270);
+            context.moveTo(200,270);
+            context.lineTo(300,270);
             context.stroke();
 
 
-            var X = 70 + parseInt(data.dorn, 10);
+            var X = 200 + parseInt(data.dorn, 10);
             var Y = 20;
             var R = 5;
             context.beginPath();
@@ -96,7 +96,7 @@
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 70 + parseInt(data.cora, 10);
+            var X = 200 + parseInt(data.cora, 10);
             var Y = 70;
             var R = 5;
             context.beginPath();
@@ -107,7 +107,7 @@
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 70 + parseInt(data.vort, 10);
+            var X = 200 + parseInt(data.vort, 10);
             var Y = 120;
             var R = 5;
             context.beginPath();
@@ -119,7 +119,7 @@
             context.stroke();
 
 
-            var X = 70 + parseInt(data.iore, 10);
+            var X = 200 + parseInt(data.iore, 10);
             var Y = 170;
             var R = 5;
             context.beginPath();
@@ -130,7 +130,7 @@
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 70 + parseInt(data.jjes, 10);
+            var X = 200 + parseInt(data.jjes, 10);
             var Y = 220;
             var R = 5;
             context.beginPath();
@@ -141,7 +141,7 @@
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 70 + parseInt(data.eelf, 10);
+            var X = 200  + parseInt(data.eelf, 10);
             var Y = 270;
             var R = 5;
             context.beginPath();
@@ -160,7 +160,7 @@
             console.log(data);
             document.querySelector("#debug").innerText = "";
 
-            var X = 70 + parseInt(data.dorn, 10);
+            var X = 200 + parseInt(data.dorn, 10);
             var Y = 20;
             var R = 5;
             context.beginPath();
@@ -171,7 +171,7 @@
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 70 + parseInt(data.cora, 10);
+            var X = 200 + parseInt(data.cora, 10);
             var Y = 70;
             var R = 5;
             context.beginPath();
@@ -182,7 +182,7 @@
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 70 + parseInt(data.vort, 10);
+            var X = 200 + parseInt(data.vort, 10);
             var Y = 120;
             var R = 5;
             context.beginPath();
@@ -193,7 +193,7 @@
             context.strokeStyle = "black";
             context.stroke();
       
-            var X = 70 + parseInt(data.iore, 10);
+            var X = 200 + parseInt(data.iore, 10);
             var Y = 170;
             var R = 5;
             context.beginPath();
@@ -204,7 +204,7 @@
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 70 + parseInt(data.jjes, 10);
+            var X = 200 + parseInt(data.jjes, 10);
             var Y = 220;
             var R = 5;
             context.beginPath();
@@ -215,7 +215,7 @@
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 70 + parseInt(data.eelf, 10);
+            var X = 200 + parseInt(data.eelf, 10);
             var Y = 270;
             var R = 5;
             context.beginPath();
