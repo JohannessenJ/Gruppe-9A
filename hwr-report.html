@@ -273,47 +273,6 @@
             console.log(data);
             document.querySelector("#debug").innerText = "";
 
-
-            context.font = '14px serif';
-            context.fillText('Morgenfugl', 120, 24);
-            context.fillText('Jobbe med det sammen', 60, 74);
-            context.fillText('Video chat', 130, 124);
-            context.fillText('Introvert', 140, 174);
-            context.fillText('Jobbe hjemme', 110, 224);
-            context.fillText('Gjør meg en del av prosessen', 25, 274);
-
-            context.fillText('Nattugle', 310, 24);
-            context.fillText('Gå for seg selv og tenke', 310, 74);
-            context.fillText('Tekste', 310, 124);
-            context.fillText('Ekstrovert', 310, 174);
-            context.fillText('Jobbe på skolen', 310, 224);
-            context.fillText('Fortell meg hva jeg skal gjøre', 310, 274);
-
-            context.beginPath();
-            context.moveTo(200,20);
-            context.lineTo(300,20);
-
-            context.moveTo(200,70);
-            context.lineTo(300,70);
-            context.stroke();
-
-            context.moveTo(200,120);
-            context.lineTo(300,120);
-            context.stroke();
-
-            context.moveTo(200,170);
-            context.lineTo(300,170);
-            context.stroke();
-
-            context.moveTo(200,220);
-            context.lineTo(300,220);
-            context.stroke();
-
-            context.moveTo(200,270);
-            context.lineTo(300,270);
-            context.stroke();
-
-            //Disse styrer punktene på skjermen. X aksen er hvor linjen begynner.
             var X = 200 + parseInt(data.dorn, 10);
             var Y = 20;
             var R = 5;
