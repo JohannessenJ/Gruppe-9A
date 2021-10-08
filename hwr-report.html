@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Data fra JSON-fil</title>
+    <title>hwr-raport</title>
     <style>
 
         body {
@@ -13,35 +13,75 @@
         p{
             align: right;
         }
+        .cotona {
+            width: 30%;
+            height: auto;
+            border: 3px solid black;
+            font-size: 20px;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+            float: right;
+            position: relative;
+        }
+
+        #grey{
+            background-color:#C5CBC6;
+        }
+
+        #purple{
+            background-color:#3274;
+        }
+
+        #pink{
+            background-color:#FFC8C8;
+        }
+
+        #green{
+            background-color:#D1FFB3;
+        }
+
+        #orange{
+            background-color:#F8B584;
+        }
+
+        #blue{
+            background-color:#67C7E2;
+        }
+
+        #yellow{
+            background-color:#FFDD75;
+        }
     </style>
-    <!--
 
-       [[[[[[[[     [[[[[[[[        [[[[   [[[[   [[[[  [[[[
-       [::::::[    [::[             [::[   [::[   [::[  [::[
-         [::[      [::[             [::[   [::[   [::[  [::[
-         [::[       [::::[   [[[[   [::[   [::[   [[[[[[[[[[
-         [::[          [::[         [::[   [::[         [::[
-       [::::::[        [::[         [::[   [::[         [::[
-       [[[[[[[[   [[[[[[[[          [[[[   [[[[         [[[[
-
-    -->
 </head>
 <body>
-<div id="debug"></div>
-<canvas id="report" height=800 width=900></canvas>
-<!-- Her skrives alt innhold, som man ønsker å "tegne" på skjermen. -->
-<script>
-    <!-- Her skrives kode i JavaScript som "gir liv" til bilde på skjermen. -->
+    <div id="debug"></div>
+
+
+    <canvas id="report" height=300 width=500></canvas>
+
+    <div class="cotona">
+        <p id="yellow">Jørgen</p>
+        <p id="grey">Elion</p>
+        <p id="purple">Psyra</p>
+        <p id="pink">Julie</p>
+        <p id="green">Madyan</p>
+        <p id="orange">Thomas</p>
+        <p id="blue">Christoffer</p>
+    </div>
+
+    <script>
 
     var canvas = document.getElementById('report');
     var context = canvas.getContext('2d');
 
-//fetch Thomas data
+    //fetch Thomas data
     fetch("https://bacit.info/hwr/20211008103122-007ed57e0c5b51ee60edf9bad4629e1e.json", {cache: 'no-cache'})
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            document.querySelector("#debug").innerText = " ";
+            document.querySelector("#debug").innerText = "";
 
 
             context.font = '14px serif';
@@ -49,7 +89,7 @@
             context.fillText('Jobbe med det sammen', 60, 74);
             context.fillText('Video chat', 130, 124);
             context.fillText('Introvert', 140, 174);
-            context.fillText('Ekstrovert', 130, 224);
+            context.fillText('Jobbe hjemme', 110, 224);
             context.fillText('Gjør meg en del av prosessen', 25, 274);
 
             context.fillText('Nattugle', 310, 24);
@@ -63,7 +103,6 @@
             context.moveTo(200,20);
             context.lineTo(300,20);
 
-            //context.beginPath();
             context.moveTo(200,70);
             context.lineTo(300,70);
             context.stroke();
@@ -84,13 +123,13 @@
             context.lineTo(300,270);
             context.stroke();
 
-
+            //Disse styrer punktene på skjermen. X aksen er hvor linjen begynner.
             var X = 200 + parseInt(data.dorn, 10);
             var Y = 20;
             var R = 5;
             context.beginPath();
             context.arc(X, Y, R, 0, 2*Math.PI, false);
-            context.fillStyle = "#F8B584";
+            context.fillStyle = "orange";
             context.fill();
             context.lineWidth = 1;
             context.strokeStyle = "black";
@@ -101,7 +140,7 @@
             var R = 5;
             context.beginPath();
             context.arc(X, Y, R, 0, 2*Math.PI, false);
-            context.fillStyle = "#F8B584";
+            context.fillStyle = "orange";
             context.fill();
             context.lineWidth = 1;
             context.strokeStyle = "black";
@@ -112,7 +151,7 @@
             var R = 5;
             context.beginPath();
             context.arc(X, Y, R, 0, 2*Math.PI, false);
-            context.fillStyle = "#F8B584";
+            context.fillStyle = "orange";
             context.fill();
             context.lineWidth = 1;
             context.strokeStyle = "black";
@@ -124,7 +163,7 @@
             var R = 5;
             context.beginPath();
             context.arc(X, Y, R, 0, 2*Math.PI, false);
-            context.fillStyle = "#F8B584";
+            context.fillStyle = "orange";
             context.fill();
             context.lineWidth = 1;
             context.strokeStyle = "black";
@@ -135,7 +174,7 @@
             var R = 5;
             context.beginPath();
             context.arc(X, Y, R, 0, 2*Math.PI, false);
-            context.fillStyle = "#F8B584";
+            context.fillStyle = "orange";
             context.fill();
             context.lineWidth = 1;
             context.strokeStyle = "black";
@@ -146,7 +185,7 @@
             var R = 5;
             context.beginPath();
             context.arc(X, Y, R, 0, 2*Math.PI, false);
-            context.fillStyle = "#F8B584";
+            context.fillStyle = "orange";
             context.fill();
             context.lineWidth = 1;
             context.strokeStyle = "black";
@@ -154,11 +193,10 @@
         });
 
     // fetch test
-    fetch("https://bacit.info/hwr/20211007133754-d48ab1940b3a4884d6f90c817d72813e.json", {cache: 'no-cache'})
+    fetch("https://bacit.info/hwr/20211008112904-255be208e7a447222513293f414cc6a5.json", {cache: 'no-cache'})
         .then(response => response.json())
         .then(data => {
-            console.log(data);
-            document.querySelector("#debug").innerText = "";
+
 
             var X = 200 + parseInt(data.dorn, 10);
             var Y = 20;
