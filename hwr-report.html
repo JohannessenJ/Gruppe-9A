@@ -36,20 +36,28 @@
     var canvas = document.getElementById('report');
     var context = canvas.getContext('2d');
 
-
-    fetch("https://bacit.info/hwr/20211007121053-48a52dde5482ae20e6a68481cec8525d.json", {cache: 'no-cache'})
+//fetch Thomas data
+    fetch("https://bacit.info/hwr/20211008103122-007ed57e0c5b51ee60edf9bad4629e1e.json", {cache: 'no-cache'})
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            document.querySelector("#debug").innerText = data.data01 + " " + data
-                .dorn + " " + data.cora + " " + data.vort + " " + data.iore;
+            document.querySelector("#debug").innerText = " ";
 
 
             context.font = '14px serif';
-            context.fillText('dorn', 30, 24);
-            context.fillText('cora', 30, 74);
-            context.fillText('vort', 30, 124);
-            context.fillText('iore', 30, 174);
+            context.fillText('Morgenfugl', 30, 24);
+            context.fillText('Jobbe med det sammen', 30, 74);
+            context.fillText('Video chat', 30, 124);
+            context.fillText('Introvert', 30, 174);
+            context.fillText('Ekstrovert', 30, 224);
+            context.fillText('Gjør meg en del av prosessen', 30, 274);
+
+            context.fillText('Nattugle', 180, 24);
+            context.fillText('Gå for seg selv og tenke', 180, 74);
+            context.fillText('Tekste', 180, 124);
+            context.fillText('Ekstrovert', 180, 174);
+            context.fillText('Jobbe på skolen', 180, 224);
+            context.fillText('Fortell meg hva jeg skal gjøre', 180, 274);
 
             context.beginPath();
             context.moveTo(70,20);
@@ -68,25 +76,32 @@
             context.lineTo(170,170);
             context.stroke();
 
+            context.moveTo(70,220);
+            context.lineTo(170,220);
+            context.stroke();
+
+            context.moveTo(70,270);
+            context.lineTo(170,270);
+            context.stroke();
+
 
             var X = 70 + parseInt(data.dorn, 10);
             var Y = 20;
             var R = 5;
             context.beginPath();
             context.arc(X, Y, R, 0, 2*Math.PI, false);
-            context.fillStyle = "red";
+            context.fillStyle = "#F8B584";
             context.fill();
             context.lineWidth = 1;
             context.strokeStyle = "black";
             context.stroke();
-            //context.closePath();
 
             var X = 70 + parseInt(data.cora, 10);
             var Y = 70;
             var R = 5;
             context.beginPath();
             context.arc(X, Y, R, 0, 2*Math.PI, false);
-            context.fillStyle = "red";
+            context.fillStyle = "#F8B584";
             context.fill();
             context.lineWidth = 1;
             context.strokeStyle = "black";
@@ -97,7 +112,7 @@
             var R = 5;
             context.beginPath();
             context.arc(X, Y, R, 0, 2*Math.PI, false);
-            context.fillStyle = "red";
+            context.fillStyle = "#F8B584";
             context.fill();
             context.lineWidth = 1;
             context.strokeStyle = "black";
@@ -109,12 +124,33 @@
             var R = 5;
             context.beginPath();
             context.arc(X, Y, R, 0, 2*Math.PI, false);
-            context.fillStyle = "red";
+            context.fillStyle = "#F8B584";
             context.fill();
             context.lineWidth = 1;
             context.strokeStyle = "black";
             context.stroke();
 
+            var X = 70 + parseInt(data.jjes, 10);
+            var Y = 220;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "#F8B584";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 70 + parseInt(data.eelf, 10);
+            var Y = 270;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "#F8B584";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
         });
 
     // fetch test
@@ -122,8 +158,7 @@
         .then(response => response.json())
         .then(data => {
             console.log(data);
-            document.querySelector("#debug").innerText = data.data01 + " " + data
-                .dorn + " " + data.cora + " " + data.vort + " " + data.iore;
+            document.querySelector("#debug").innerText = "";
 
             var X = 70 + parseInt(data.dorn, 10);
             var Y = 20;
@@ -135,7 +170,6 @@
             context.lineWidth = 1;
             context.strokeStyle = "black";
             context.stroke();
-            //context.closePath();
 
             var X = 70 + parseInt(data.cora, 10);
             var Y = 70;
@@ -161,6 +195,28 @@
       
             var X = 70 + parseInt(data.iore, 10);
             var Y = 170;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "lightgreen";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 70 + parseInt(data.jjes, 10);
+            var Y = 220;
+            var R = 5;
+            context.beginPath();
+            context.arc(X, Y, R, 0, 2*Math.PI, false);
+            context.fillStyle = "lightgreen";
+            context.fill();
+            context.lineWidth = 1;
+            context.strokeStyle = "black";
+            context.stroke();
+
+            var X = 70 + parseInt(data.eelf, 10);
+            var Y = 270;
             var R = 5;
             context.beginPath();
             context.arc(X, Y, R, 0, 2*Math.PI, false);
