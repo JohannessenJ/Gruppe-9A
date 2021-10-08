@@ -1,8 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HowWeRoll</title>
+    <title>HowWeRoll (lagring)</title>
     <!-- Med denne filen ønsker vi å bevise at vi kan samle inn data ... -->
     <style>
      /* Her kan stil defineres (vi skal bruke Cascading Style Sheets) */
@@ -21,13 +23,12 @@
 <!-- Her skrives alt innhold, som man ønsker å "tegne" på skjermen. -->
 <!-- Issue se https://html.spec.whatwg.org/multipage/forms.html#introduction-4 -->
 <hr>
-<CENTER>
 <form>
-    <b><p><label for="data01">Navn</label>
-        <input type="text" name="data01" id="data01" /></p></b>
+    <p><label for="navn">Navn:</label>
+        <input type="text" name="navn" id="navn" /></p>
 
 
-   <h2> <p>How we roll</p> </h2>
+    <p>HowWeRoll-parametre:</p>
 
     <p>
         <!-- dorn - day or night -->
@@ -44,29 +45,41 @@
     </p>
 
     <p>
-        <label for=="...">Spørsmål </label>
-
+        <!-- vort - Video chat or text -->
+        <label for="vort">Video chat</label>
+        <input type="range" id="vort" name="vort" value="50">
+        <label for="vort">Tekste</label>
     </p>
 
     <p>
-        <label>Please choose one of the numbers:
-            <select name="numb">
-                <option value="ten">10</option>
-                <option value="twenty">20</option>
-                <option value="forty" disabled>30</option>
-            </select>
-        </label>
+        <!-- iore - introvert or extrovert -->
+        <label for="iore">Introvert</label>
+        <input type="range" id="iore" name="iore" value="50">
+        <label for="iore">Ekstrovert</label>
     </p>
 
+    <p>
+        <!--jjes - jobbe hjemme eller på skolen -->
+        <label for="jjes">Jobbe hjemme</label>
+        <input type="range" id="jjes" name="jjes" value="50">
+        <label for="jjes">Jobbe på skolen</label>
+    </p>
 
-    <button type="submit">Lagre</button>
+    <p>
+        <!-- eelf - Gjør meg en del av prosessen eller Fortell meg hva jeg skal gjøre -->
+        <label for="eelf">Gjør meg en del av prosessen</label>
+        <input type="range" id="eelf" name="eelf" value="50">
+        <label for="eelf">Fortell meg hva jeg skal gjøre</label>
+    </p>
+
+    <button type="submit">Gjør noe</button>
 </form>
 
 <div class="results">
     <h2>Form Data</h2>
     <pre></pre>
 </div>
-</CENTER>
+
 <script>
    // From https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch (seen 2021-09-27)
    // Example POST method implementation using fetch:
@@ -102,3 +115,4 @@
    form.addEventListener('submit', handleSubmit);
   </script>
 </body>
+</html>
