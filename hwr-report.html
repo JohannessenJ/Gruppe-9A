@@ -7,7 +7,7 @@
     <title>hwr-raport</title>
     <style>
 
-        /* bruker denne for å posiosjonerer strekene og prikkene litt til venstre for å gjøre plass til
+        /* Bruker denne for å posiosjonerer strekene og prikkene litt til venstre for å gjøre plass til
         cotona der navnene blir fargecodet.*/
         body {
             text-align: center;
@@ -59,7 +59,7 @@
             background-color:#FFDD75;
         }
 
-        /* Tilbake knapp*/
+        /* class til for tilbake knapp*/
         .button {
   background-color: #ADD8E6;
   border: 3px solid black;
@@ -75,7 +75,7 @@
   float:left;
   }
 
-/* Her avrunder vi knappen*/
+/* class som avrunder hjørnene på knappen*/
 .button-round {
 border-radius: 10px;
 }
@@ -127,6 +127,7 @@ border-radius: 10px;
     context.fillText('Jobbe på skolen', 310, 224);
     context.fillText('Fortell meg hva jeg skal gjøre', 310, 274);
 
+    // Her bestemmer du hvor linjene skal starte og slutte.
     context.beginPath();
     context.moveTo(200,20);
     context.lineTo(300,20);
@@ -136,7 +137,7 @@ border-radius: 10px;
     context.stroke();
 
     context.moveTo(200,120);
-    context.lineTo(400,120);
+    context.lineTo(300,120);
     context.stroke();
 
     context.moveTo(200,170);
