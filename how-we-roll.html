@@ -7,12 +7,14 @@
     <title>HowWeRoll (lagring)</title>
     <!-- Med denne filen ønsker vi å bevise at vi kan samle inn data ... -->
     <style>
-     /* Her kan stil defineres (vi skal bruke Cascading Style Sheets) */
+     /* Her kan vi bytte bakgrunnsfarge på hele nettsiden også bruker vi text-align: center
+      for å få alt i midten*/
      body{
          background-color: white;
          text-align: center;
      }
 
+     /* Her er classen til knappene til å navigere rundt siden*/
      .button {
          background-color: #ADD8E6;
          border: 3px solid black;
@@ -37,18 +39,25 @@
 </head>
 <body>
 
+<!-- h1 font for stor størrelse, men var ikke stort nok. Så vi la til style font size 80px -->
 <h1 style="font-size:80px">Gruppe 9A</h1>
 
+<!-- Vi velgte h2 font og valgt å ikke legge til ekstra font størrelse fordi vi var
+ fornøyd med størrelsen h2 for gir oss som defult-->
     <h2>How We Roll</h2>
 <br>
-
+<!-- Her er det knapper med hyperlinker som du kan bruke til å lett navigere deg rundt på nettsiden vår.
+ Den kaller på klassen button button.round får å få css stylingen som får det til å være en box med avrundet hjørner
+ Vi bruker også <b> til å få skriften litt tykkere fordi det ser bedre ut med det.-->
 <a href="index.html" class="button button-round"><b>Hjemmeside</b></a>
 <a href="hwr-report.html" class="button button-round"><b>HWR- report</b></a>
 
 
-<!-- Her skrives alt innhold, som man ønsker å "tegne" på skjermen. -->
-<!-- Issue se https://html.spec.whatwg.org/multipage/forms.html#introduction-4 -->
+<!-- Her har vi lagt til er "sprøsmålene" vi skal svar på for å få de inn i raporten-->
 <form>
+
+    <!-- Her har vi skrevet navnet vårt på på denne undersøkelsen.
+     Denne informasjonen bruker vi ikke i raporten, men den blir brukt av oss for å holde styr på disse lenkene-->
     <p><label for="navn">Navn:</label>
         <input type="text" name="navn" id="navn" /></p>
 
@@ -56,7 +65,8 @@
     <p>HowWeRoll-parametre:</p>
 
     <p>
-        <!-- dorn - day or night -->
+        <!-- dorn - day or night | Her har vi parameterene som bruker range for å få den slideren
+        som vi kan flytte for å få annet resultat.-->
         <label for="dorn">Morgenfugl</label>
         <input type="range" id="dorn" name="dorn" value="50">
         <label for="dorn">Nattugle</label>
