@@ -13,7 +13,7 @@
 
     <style>
 
-        /* bruker denne for å posiosjonerer strekene og prikkene litt til venstre for å gjøre plass til
+        /* Bruker denne for å posiosjonerer strekene og prikkene litt til venstre for å gjøre plass til
         cotona der navnene blir fargecodet.*/
         body {
             text-align: center;
@@ -36,7 +36,10 @@
             position: relative;
         }
 
-        /* Fargene på prikkene samme som på visittkortene på index siden */
+        /* Fargene på prikkene samme som på visittkortene på index siden.
+         Vi har lagt merke til at fargen blir forskjellig mellom "cotona" (se under .cotona for mer info) og punktene.
+          Dette er vel fordi css og java ser ikke fargekoden likt. Vi bestemte for å bare beholde
+          de samme fargekodene fordi det ser bedre ut i koden*/
         #grey{
             background-color:#C5CBC6;
         }
@@ -65,7 +68,7 @@
             background-color:#FFDD75;
         }
 
-        /* Hjemmeside-knapp*/
+
         .button {
   background-color: #ADD8E6;
   border: 3px solid black;
@@ -80,7 +83,7 @@
   width:180px;
   }
 
-/* Her avrunder vi knappen*/
+/* class som avrunder hjørnene på knappen*/
 .button-round {
 border-radius: 10px;
 }
@@ -133,6 +136,7 @@ border-radius: 10px;
     context.fillText('Jobbe på skolen', 310, 224);
     context.fillText('Fortell meg hva jeg skal gjøre', 310, 274);
 
+    // Her bestemmer du hvor linjene skal starte og slutte.
     context.beginPath();
     context.moveTo(200,20);
     context.lineTo(300,20);
@@ -142,7 +146,7 @@ border-radius: 10px;
     context.stroke();
 
     context.moveTo(200,120);
-    context.lineTo(400,120);
+    context.lineTo(300,120);
     context.stroke();
 
     context.moveTo(200,170);
@@ -605,7 +609,7 @@ border-radius: 10px;
         });
 
     // Her fetcher vi Psyra sin data som blir de lilla punktene.
-    fetch("https://bacit.info/hwr/20211008130446-80f4bcf1ee921b019be00882fdde7270.json", {cache: 'no-cache'})
+    fetch("https://bacit.info/hwr/20211008174251-89b0a4b2b7513aa921b5e5240ae52bc7.json", {cache: 'no-cache'})
         .then(response => response.json())
         .then(data => {
             console.log(data);
