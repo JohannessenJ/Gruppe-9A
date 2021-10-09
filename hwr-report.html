@@ -59,6 +59,7 @@
             background-color:#FFDD75;
         }
 
+        /* Tilbake knapp*/
         .button {
   background-color: #ADD8E6;
   border: 3px solid black;
@@ -74,6 +75,7 @@
   float:left;
   }
 
+/* Her avrunder vi knappen*/
 .button-round {
 border-radius: 10px;
 }
@@ -83,15 +85,16 @@ border-radius: 10px;
 </head>
 <body>
 
+<!-- Her har du tilbake kanppen som sender deg tilbake til hjemmesiden altså index.html -->
 <a href="index.html" class="button button-round"><b>Tilbake</b></a>
 
     <div id="debug"></div>
 
-    <!-- Her velget jeg størrelse på canvaset. Grunnen for det er denne størrelsen
+    <!-- Her velget vi størrelse på canvaset. Grunnen for det er denne størrelsen
      er for å hjelpe å plassere den riktig ved hjelp av tekst-align: center i body-en -->
     <canvas id="report" height=300 width=500></canvas>
 
-    <!-- Her skriver jeg inn navnene og fargekoder de ved hjelp av farge id-ene som står overfor -->
+    <!-- Her skriver vi inn navnene og fargekoder de ved hjelp av farge id-ene som står overfor -->
     <div class="cotona">
         <p id="yellow">Jørgen Bache Johannessen</p>
         <p id="grey">Elion Muriqi</p>
@@ -107,6 +110,8 @@ border-radius: 10px;
     var canvas = document.getElementById('report');
     var context = canvas.getContext('2d');
 
+    // Her kan vi bytte fonten og skrift størrelsen på teksten ved siden av linjene.
+    // Vi bytter også hva som står på teksten på siden av linjene og positionen min.
     context.font = '14px serif';
     context.fillText('Morgenfugl', 120, 24);
     context.fillText('Jobbe med det sammen', 60, 74);
@@ -131,7 +136,7 @@ border-radius: 10px;
     context.stroke();
 
     context.moveTo(200,120);
-    context.lineTo(300,120);
+    context.lineTo(400,120);
     context.stroke();
 
     context.moveTo(200,170);
