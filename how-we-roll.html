@@ -9,9 +9,29 @@
     <style>
      /* Her kan stil defineres (vi skal bruke Cascading Style Sheets) */
      body{
-         background-color: #white;
+         background-color: white;
          text-align: center;
      }
+
+     .button {
+         background-color: #ADD8E6;
+         border: 3px solid black;
+         color: black;
+         padding: 20px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 30px;
+         margin: 10px 10px;
+         height:40px;
+         width:180px;
+     }
+
+     /* Her avrunder vi knappen*/
+     .button-round {
+         border-radius: 10px;
+     }
+
     </style>
     <!--
        [[[[[[[[     [[[[[[[[        [[[[   [[[[   [[[[  [[[[
@@ -24,9 +44,17 @@
     -->
 </head>
 <body>
+
+<h1 style="font-size:80px">Gruppe 9A</h1>
+
+    <h2>How We Roll</h2>
+
+<a href="index.html" class="button button-round"><b>Hjemmeside</b></a>
+<a href="hwr-report.html" class="button button-round"><b>HWR- report</b></a>
+
+
 <!-- Her skrives alt innhold, som man ønsker å "tegne" på skjermen. -->
 <!-- Issue se https://html.spec.whatwg.org/multipage/forms.html#introduction-4 -->
-<hr>
 <form>
     <p><label for="navn">Navn:</label>
         <input type="text" name="navn" id="navn" /></p>
