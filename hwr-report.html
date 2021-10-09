@@ -99,7 +99,7 @@ border-radius: 10px;
 
     <!-- Her velget vi størrelse på canvaset. Grunnen for det er denne størrelsen
      er for å hjelpe å plassere den riktig ved hjelp av tekst-align: center i body-en -->
-    <canvas id="report" height=300 width=500></canvas>
+    <canvas id="report" height=300 width=600></canvas>
 
     <!-- Her skriver vi inn navnene og fargekoder de ved hjelp av farge id-ene som står overfor -->
     <div class="cotona">
@@ -127,36 +127,36 @@ border-radius: 10px;
     context.fillText('Jobbe hjemme', 110, 224);
     context.fillText('Gjør meg en del av prosessen', 25, 274);
 
-    context.fillText('Nattugle', 310, 24);
-    context.fillText('Gå for seg selv og tenke', 310, 74);
-    context.fillText('Tekste', 310, 124);
-    context.fillText('Ekstrovert', 310, 174);
-    context.fillText('Jobbe på skolen', 310, 224);
-    context.fillText('Fortell meg hva jeg skal gjøre', 310, 274);
+    context.fillText('Nattugle', 410, 24);
+    context.fillText('Gå for seg selv og tenke', 410, 74);
+    context.fillText('Tekste', 410, 124);
+    context.fillText('Ekstrovert', 410, 174);
+    context.fillText('Jobbe på skolen', 410, 224);
+    context.fillText('Fortell meg hva jeg skal gjøre', 410, 274);
 
     // Her bestemmer du hvor linjene skal starte og slutte.
     context.beginPath();
     context.moveTo(200,20);
-    context.lineTo(300,20);
+    context.lineTo(400,20);
 
     context.moveTo(200,70);
-    context.lineTo(300,70);
+    context.lineTo(400,70);
     context.stroke();
 
     context.moveTo(200,120);
-    context.lineTo(300,120);
+    context.lineTo(400,120);
     context.stroke();
 
     context.moveTo(200,170);
-    context.lineTo(300,170);
+    context.lineTo(400,170);
     context.stroke();
 
     context.moveTo(200,220);
-    context.lineTo(300,220);
+    context.lineTo(400,220);
     context.stroke();
 
     context.moveTo(200,270);
-    context.lineTo(300,270);
+    context.lineTo(400,270);
     context.stroke();
 
     // Her fetcher vi Thomas sin data som blir de orange punktene.
@@ -167,7 +167,7 @@ border-radius: 10px;
             document.querySelector("#debug").innerText = "";
 
             //Disse styrer punktene på skjermen. X aksen er hvor linjen begynner.
-            var X = 200 + parseInt(data.dorn, 10);
+            var X = 200 + parseInt(data.dorn, 20);
             var Y = 20;
             var R = 5;
             context.beginPath();
@@ -178,7 +178,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.cora, 10);
+            var X = 200 + parseInt(data.cora, 20);
             var Y = 70;
             var R = 5;
             context.beginPath();
@@ -189,7 +189,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.vort, 10);
+            var X = 200 + parseInt(data.vort, 20);
             var Y = 120;
             var R = 5;
             context.beginPath();
@@ -201,7 +201,7 @@ border-radius: 10px;
             context.stroke();
 
 
-            var X = 200 + parseInt(data.iore, 10);
+            var X = 200 + parseInt(data.iore, 20);
             var Y = 170;
             var R = 5;
             context.beginPath();
@@ -212,7 +212,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.jjes, 10);
+            var X = 200 + parseInt(data.jjes, 20);
             var Y = 220;
             var R = 5;
             context.beginPath();
@@ -223,7 +223,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200  + parseInt(data.eelf, 10);
+            var X = 200  + parseInt(data.eelf, 20);
             var Y = 270;
             var R = 5;
             context.beginPath();
@@ -241,7 +241,7 @@ border-radius: 10px;
         .then(data => {
 
 
-            var X = 200 + parseInt(data.dorn, 10);
+            var X = 200 + parseInt(data.dorn, 20);
             var Y = 20;
             var R = 5;
             context.beginPath();
@@ -252,7 +252,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.cora, 10);
+            var X = 200 + parseInt(data.cora, 20);
             var Y = 70;
             var R = 5;
             context.beginPath();
@@ -263,7 +263,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.vort, 10);
+            var X = 200 + parseInt(data.vort, 20);
             var Y = 120;
             var R = 5;
             context.beginPath();
@@ -274,7 +274,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
       
-            var X = 200 + parseInt(data.iore, 10);
+            var X = 200 + parseInt(data.iore, 20);
             var Y = 170;
             var R = 5;
             context.beginPath();
@@ -285,7 +285,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.jjes, 10);
+            var X = 200 + parseInt(data.jjes, 20);
             var Y = 220;
             var R = 5;
             context.beginPath();
@@ -296,7 +296,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.eelf, 10);
+            var X = 200 + parseInt(data.eelf, 20);
             var Y = 270;
             var R = 5;
             context.beginPath();
@@ -315,7 +315,7 @@ border-radius: 10px;
             console.log(data);
             document.querySelector("#debug").innerText = "";
 
-            var X = 200 + parseInt(data.dorn, 10);
+            var X = 200 + parseInt(data.dorn, 20);
             var Y = 20;
             var R = 5;
             context.beginPath();
@@ -326,7 +326,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.cora, 10);
+            var X = 200 + parseInt(data.cora, 20);
             var Y = 70;
             var R = 5;
             context.beginPath();
@@ -337,7 +337,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.vort, 10);
+            var X = 200 + parseInt(data.vort, 20);
             var Y = 120;
             var R = 5;
             context.beginPath();
@@ -349,7 +349,7 @@ border-radius: 10px;
             context.stroke();
 
 
-            var X = 200 + parseInt(data.iore, 10);
+            var X = 200 + parseInt(data.iore, 20);
             var Y = 170;
             var R = 5;
             context.beginPath();
@@ -360,7 +360,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.jjes, 10);
+            var X = 200 + parseInt(data.jjes, 20);
             var Y = 220;
             var R = 5;
             context.beginPath();
@@ -371,7 +371,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200  + parseInt(data.eelf, 10);
+            var X = 200  + parseInt(data.eelf, 20);
             var Y = 270;
             var R = 5;
             context.beginPath();
@@ -389,7 +389,7 @@ border-radius: 10px;
             console.log(data);
             document.querySelector("#debug").innerText = "";
 
-            var X = 200 + parseInt(data.dorn, 10);
+            var X = 200 + parseInt(data.dorn, 20);
             var Y = 20;
             var R = 5;
             context.beginPath();
@@ -400,7 +400,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.cora, 10);
+            var X = 200 + parseInt(data.cora, 20);
             var Y = 70;
             var R = 5;
             context.beginPath();
@@ -411,7 +411,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.vort, 10);
+            var X = 200 + parseInt(data.vort, 20);
             var Y = 120;
             var R = 5;
             context.beginPath();
@@ -423,7 +423,7 @@ border-radius: 10px;
             context.stroke();
 
 
-            var X = 200 + parseInt(data.iore, 10);
+            var X = 200 + parseInt(data.iore, 20);
             var Y = 170;
             var R = 5;
             context.beginPath();
@@ -434,7 +434,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.jjes, 10);
+            var X = 200 + parseInt(data.jjes, 20);
             var Y = 220;
             var R = 5;
             context.beginPath();
@@ -445,7 +445,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200  + parseInt(data.eelf, 10);
+            var X = 200  + parseInt(data.eelf, 20);
             var Y = 270;
             var R = 5;
             context.beginPath();
@@ -464,7 +464,7 @@ border-radius: 10px;
             console.log(data);
             document.querySelector("#debug").innerText = "";
 
-            var X = 200 + parseInt(data.dorn, 10);
+            var X = 200 + parseInt(data.dorn, 20);
             var Y = 20;
             var R = 5;
             context.beginPath();
@@ -475,7 +475,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.cora, 10);
+            var X = 200 + parseInt(data.cora, 20);
             var Y = 70;
             var R = 5;
             context.beginPath();
@@ -486,7 +486,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.vort, 10);
+            var X = 200 + parseInt(data.vort, 20);
             var Y = 120;
             var R = 5;
             context.beginPath();
@@ -498,7 +498,7 @@ border-radius: 10px;
             context.stroke();
 
 
-            var X = 200 + parseInt(data.iore, 10);
+            var X = 200 + parseInt(data.iore, 20);
             var Y = 170;
             var R = 5;
             context.beginPath();
@@ -509,7 +509,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.jjes, 10);
+            var X = 200 + parseInt(data.jjes, 20);
             var Y = 220;
             var R = 5;
             context.beginPath();
@@ -520,7 +520,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200  + parseInt(data.eelf, 10);
+            var X = 200  + parseInt(data.eelf, 20);
             var Y = 270;
             var R = 5;
             context.beginPath();
@@ -532,13 +532,13 @@ border-radius: 10px;
             context.stroke();
         });
     // Her fetcher vi Madyan sin data som blir de grønne punktene.
-    fetch("https://bacit.info/hwr/20211008130446-80f4bcf1ee921b019be00882fdde7270.json", {cache: 'no-cache'})
+    fetch("https://bacit.info/hwr/20211009152415-997caca89a07e307d788d0a2e2112bf1.json", {cache: 'no-cache'})
         .then(response => response.json())
         .then(data => {
             console.log(data);
             document.querySelector("#debug").innerText = "";
 
-            var X = 200 + parseInt(data.dorn, 10);
+            var X = 200 + parseInt(data.dorn, 20);
             var Y = 20;
             var R = 5;
             context.beginPath();
@@ -549,7 +549,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.cora, 10);
+            var X = 200 + parseInt(data.cora, 20);
             var Y = 70;
             var R = 5;
             context.beginPath();
@@ -560,7 +560,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.vort, 10);
+            var X = 200 + parseInt(data.vort, 20);
             var Y = 120;
             var R = 5;
             context.beginPath();
@@ -572,7 +572,7 @@ border-radius: 10px;
             context.stroke();
 
 
-            var X = 200 + parseInt(data.iore, 10);
+            var X = 200 + parseInt(data.iore, 20);
             var Y = 170;
             var R = 5;
             context.beginPath();
@@ -583,7 +583,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.jjes, 10);
+            var X = 200 + parseInt(data.jjes, 20);
             var Y = 220;
             var R = 5;
             context.beginPath();
@@ -594,7 +594,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200  + parseInt(data.eelf, 10);
+            var X = 200  + parseInt(data.eelf, 20);
             var Y = 270;
             var R = 5;
             context.beginPath();
@@ -607,13 +607,13 @@ border-radius: 10px;
         });
 
     // Her fetcher vi Psyra sin data som blir de lilla punktene.
-    fetch("https://bacit.info/hwr/20211008174251-89b0a4b2b7513aa921b5e5240ae52bc7.json", {cache: 'no-cache'})
+    fetch("https://bacit.info/hwr/20211009152147-0a370e282c6702ddcf5b0ddecb8dff50.json", {cache: 'no-cache'})
         .then(response => response.json())
         .then(data => {
             console.log(data);
             document.querySelector("#debug").innerText = "";
 
-            var X = 200 + parseInt(data.dorn, 10);
+            var X = 200 + parseInt(data.dorn, 20);
             var Y = 20;
             var R = 5;
             context.beginPath();
@@ -624,7 +624,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.cora, 10);
+            var X = 200 + parseInt(data.cora, 20);
             var Y = 70;
             var R = 5;
             context.beginPath();
@@ -635,7 +635,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.vort, 10);
+            var X = 200 + parseInt(data.vort, 20);
             var Y = 120;
             var R = 5;
             context.beginPath();
@@ -647,7 +647,7 @@ border-radius: 10px;
             context.stroke();
 
 
-            var X = 200 + parseInt(data.iore, 10);
+            var X = 200 + parseInt(data.iore, 20);
             var Y = 170;
             var R = 5;
             context.beginPath();
@@ -658,7 +658,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200 + parseInt(data.jjes, 10);
+            var X = 200 + parseInt(data.jjes, 20);
             var Y = 220;
             var R = 5;
             context.beginPath();
@@ -669,7 +669,7 @@ border-radius: 10px;
             context.strokeStyle = "black";
             context.stroke();
 
-            var X = 200  + parseInt(data.eelf, 10);
+            var X = 200  + parseInt(data.eelf, 20);
             var Y = 270;
             var R = 5;
             context.beginPath();
