@@ -98,22 +98,35 @@ men vi syntes det var mer oversiktelig med grid funksjonen og letter å bruke*/
 </head>
 <body>
 
-<!-- Her bruker vi "center" for å få alt sentrert i midten -->
+<!-- Her bruker vi "center" for å få alt sentrert i midten. Vi bruker style="font-size:80px"
+ for å få teksten stor-->
 <center><h1 style="font-size:80px">Gruppe 9A</h1>
 
+    <!-- Her bruker vi bare <h2> på grunn av vi var fornøyd med størrelsen på skriften med bare <h2> -->
     <h2>Hvem er vi?</h2>
 
 
 
     <br> <!--linebreak-->
+    <!-- Har er knappene som har hyperlenker til how-we-roll.html og hwr-report.html.
+     Vi har <b> for bold tekst for å lage teksten litt tykkere fordi det så bedre ut -->
     <a href="how-we-roll.html" class="button button-round"><b>How we roll</b></a>
     <a href="hwr-report.html" class="button button-round"><b> HWR- report</b></a>
 
 
 </center>
+</body>
+
 <br>
 <br>
-<div class="grid-container"> <!--What makes the cards display in a grid-->
+<!-- Her er visittkortene alle visitkortene ligger i en div som bruker klassen "grid-container"
+ som holder alle visittkortene i en grid-->
+<div class="grid-container">
+
+    <!-- Da har vi en div inn i den første div-en også kaller de klassen card som styler visittkortet.
+     Så kaller vi id-en på en farge id som blir den personens farge id. Vi har også lagt til bilde
+     img src funksjonen med et av våre bilder som vi har lastet opp i github repositorien vår i mappen images.
+     Tilslutt under <p> så har vi informasjon om oss selv. Dette har vi likt på alle visittkortene.-->
     <div class="card" id="yellow">
         <p><div class="headline"> <b>Jørgen Bache Johannessen</b></div><br>
         <img src="https://github.com/JohannessenJ/Gruppe-9A/blob/main/images/222521323_219089763338273_7827765180097184408_n.jpg?raw=true" width="150" height="150" class="button-round">

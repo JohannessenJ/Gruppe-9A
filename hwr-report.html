@@ -30,7 +30,10 @@
             position: relative;
         }
 
-        /* Fargene på prikkene samme som på visittkortene på index siden */
+        /* Fargene på prikkene samme som på visittkortene på index siden.
+         Vi har lagt merke til at fargen blir forskjellig mellom "cotona" (se under .cotona for mer info) og punktene.
+          Dette er vel fordi css og java ser ikke fargekoden likt. Vi bestemte for å bare beholde
+          de samme fargekodene fordi det ser bedre ut i koden*/
         #grey{
             background-color:#C5CBC6;
         }
@@ -600,7 +603,7 @@ border-radius: 10px;
         });
 
     // Her fetcher vi Psyra sin data som blir de lilla punktene.
-    fetch("https://bacit.info/hwr/20211008130446-80f4bcf1ee921b019be00882fdde7270.json", {cache: 'no-cache'})
+    fetch("https://bacit.info/hwr/20211008174251-89b0a4b2b7513aa921b5e5240ae52bc7.json", {cache: 'no-cache'})
         .then(response => response.json())
         .then(data => {
             console.log(data);
