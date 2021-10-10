@@ -30,7 +30,8 @@ Eks: Første eksempel vi valgte å ta utgangspunkt i, og startet å jobbe med (e
 
 I uke 40 valgte vi derimot å bytte til en annen nettside laget av et annet gruppemedlem, da vi usikre på hvordan problemene i forhold til plassering skulle løses. Den nye koden som ble lagt inn ble forklart for gruppen, da det var viktig at alle forstod hvordan den var satt opp og fungerte. Videre så gruppen gjennom koden og påpekte “småfeil” vi måtte rette på. Deretter finpusset vi visittkortene og knappene (endret farge/form) og hvert gruppemedlem fylte inn nødvendig tekst i sitt visittkort.
 
-Nettside idag: https://johannessenj.github.io/Gruppe-9A/ 
+>Nettside idag: https://johannessenj.github.io/Gruppe-9A/ 
+
 Her har vi blant annet valgt å benytte oss av bilder på visittkort samt scroll funksjon (dette er forbedringer fra den tidligste skissen gruppen ble enig om å bruke) (samt at vi kodet hvert visittkort i hver sin farge for å gi visittkortene sine “egne” preg)
 
 Videre organisering (how we roll)
