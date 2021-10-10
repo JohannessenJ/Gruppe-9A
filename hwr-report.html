@@ -13,7 +13,7 @@
 
     <style>
 
-        /* Bruker denne for å posiosjonerer strekene og prikkene litt til venstre for å gjøre plass til
+        /* Bruker denne for å posisjonere strekene og prikkene litt til venstre for å gjøre plass til
         cotona der navnene blir fargecodet.*/
         body {
             text-align: center;
@@ -21,7 +21,7 @@
         }
 
 
-        /* cotona = color to name. Her lages det boxen som holder inne navne og fargene rundt navnet */
+        /* cotona = color to name. Her lages det boksen som holder inne navnene og fargene rundt navnet */
         .cotona {
             width: 30%;
             height: auto;
@@ -64,7 +64,7 @@
         }
 
 
-        /* class til navigasjons knappene våre*/
+        /* class til navigasjonsknappene våre*/
         .button {
   background-color: #ADD8E6;
   border: 3px solid black;
@@ -115,8 +115,8 @@ border-radius: 10px;
     var canvas = document.getElementById('report');
     var context = canvas.getContext('2d');
 
-    // Her kan vi bytte fonten og skrift størrelsen på teksten ved siden av linjene.
-    // Vi bytter også hva som står på teksten på siden av linjene og positionen min.
+    // Her kan vi bytte fonten og skriftstørrelsen på teksten ved siden av linjene.
+    // Vi bytter også hva som står på teksten på siden av linjene og posisjonen min.
     context.font = '14px serif';
     context.fillText('Morgenfugl', 120, 24);
     context.fillText('Jobbe med det sammen', 60, 74);
@@ -165,14 +165,14 @@ border-radius: 10px;
             document.querySelector("#debug").innerText = "";
 
             //Disse styrer punktene på skjermen. X aksen er hvor linjen begynner.
-            //Når jeg lagte linjene lenger så følge ikke punkene med,
-            //men hvis jeg forandret på er det står "30" så virket det.
+            //Når jeg lagde linjene lenger så følger ikke punkene med,
+            //men hvis jeg forandret på en det står "30" så virket det.
             //Hvis jeg gikk fra 300px til 400px linjer så måtte jeg bytte den til 20 (sto 10 fra før)
             //Når jeg forlenget linjen til 500px fra 400px så måtte jeg sette den til 30 for punkene skulle følge med.
 
-            //Y styrer hvor punketet skap være på Y aksen altså høyden.
-            //R er radiusen av punktet gjør bytter du den til 10 så blir bunketet dobbelt så stort.
-            //i context.fillStyle så bytter du fargen på punketet
+            //Y styrer hvor punktet skal være på Y aksen, altså høyden.
+            //R er radiusen av punktet. bytter du den til 10 så blir punktet dobbelt så stort.
+            //i context.fillStyle så bytter du fargen på punktet
             //i context.lineWidth er tykkelsen på rammen rundt prikken
             //i context.Style er fargen på rammen rundt prikken
             var X = 200 + parseInt(data.dorn, 30);
@@ -243,7 +243,7 @@ border-radius: 10px;
             context.stroke();
         });
 
-    // Her fetcher vi Jørgen sin data som blir de gule pungtene
+    // Her fetcher vi Jørgen sin data som blir de gule punktene
     fetch("https://bacit.info/hwr/20211008122750-9c7f2a5fdb748b2b5928ca4e44c2d8e0.json", {cache: 'no-cache'})
         .then(response => response.json())
         .then(data => {
