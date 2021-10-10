@@ -1,6 +1,6 @@
 # Denne filen inneholder et sammendrag av vårt arbeid med “How We Roll”-oppgaven.
 
-**Gruppemedlemmer:
+**Gruppemedlemmer med deres github brukernavn:**
 * Madyan Alkarmo @medeank
 * Elion Muriqi @emuriqi
 * Christoffer Buvik @Chribuvik
@@ -16,14 +16,14 @@
 ### Hvordan startet prosjektet? (organisering)
 how we roll prosjektet startet da vi fikk visittkort oppgaven der vi lagde hver vårt visittkort forslag. Her misforsto vi oppgaven litt så vi endte opp med å lage valgt design i paint for så og legge dem inn i github pages som bilder. Når vi senere deltok i Janis sine kode timer der han viste oss hvordan man lage visittkort i css forstod vi at vi hadde gjort det på feil måte, og måtte ta for oss oppgaven på nytt. 
 
-**Grunnleggende programmering i HTML og CSS 
+### Grunnleggende programmering i HTML og CSS 
 Før vi tok for oss visittkortet på nytt følte vi det var viktig at vi satte fokus på å sørge for at alle i gruppen lærte seg grunnleggende html/css. Dette ble gjort fordelt på fritid og gruppeundervisning. For å hjelpe hverandre på fritiden delte gruppen forskjellige nettsider/eksempler de fant nyttige.
 
 Etter å ha fått en grunnleggende forståelse av html/css begynte gruppen individuelt å kode en nettside med visittkort for å prøve seg frem, noe som hjalp å bedre vår forståelse. Her var det mange gode forslag, men alle sidene manglet betydelig “finpuss”. Gruppen bestemte seg for å ta utgangspunkt i en nettside, som vi kunne jobbe videre med.
 
 Nettsiden da den var kodet med hjelp av bilder:
 
-
+![Nettside v1](images/visitt_kort_side_v1.png)
 
 
 
@@ -66,5 +66,5 @@ Hvilke regler dere satt for bruke av hoved-repository og hvordan fungerte disse?
 I hoved-repositorien startet vi prosjektet med at alle kodet sammen i main branch, vi hadde lite- til null erfaring med bruk av github og branches fra før så vi var usikre på hva som var lurt og ikke lurt. Vi skjønte ganske fort at om alle skulle skrive i main branch ble det mye kluss. Etter tips fra hjelpelærer lagde alle hver sin branch som vi kalte for navnet vårt. Her kunne vi gjøre lokale endringer dersom vi jobbet hjemme eller alene og deretter pushe til GitHub og lage en pull request for dermed å merge inn i main branch. På denne måten unngikk vi konflikter og man kunne jobbe enkelt på egenhånd. 
 
 Dersom vi satt sammen og jobbet på skolen eller i gruppetimene og alle var enige om endringer som skulle gjøres skrev vi det rett i main branch ettersom vi visste at det ikke ville skape konflikter. Vi har i stor grad jobbet mye med “prøv og feile”-metoden. 
-
+Hva vedlegget(pdf filen) i How we roll oppgaven sier HWR-GRUPPE-9A skal inneholde:
 
