@@ -35,7 +35,8 @@ Her er kan du se at vi lagde visittkortene i paint også linket de inn som bilde
 
 I uke 40 valgte vi derimot å bytte til en annen nettside laget av et annet gruppemedlem, da vi usikre på hvordan problemene i forhold til plassering skulle løses. Den nye koden som ble lagt inn ble forklart for gruppen, da det var viktig at alle forstod hvordan den var satt opp og fungerte. Videre så gruppen gjennom koden og påpekte “småfeil” vi måtte rette på. Deretter finpusset vi visittkortene og knappene (endret farge/form) og hvert gruppemedlem fylte inn nødvendig tekst i sitt visittkort.
 
-Nettside idag: https://johannessenj.github.io/Gruppe-9A/ 
+>Nettside idag: https://johannessenj.github.io/Gruppe-9A/ 
+
 Her har vi blant annet valgt å benytte oss av bilder på visittkort samt scroll funksjon (dette er forbedringer fra den tidligste skissen gruppen ble enig om å bruke) (samt at vi kodet hvert visittkort i hver sin farge for å gi visittkortene sine “egne” preg)
 
 ### Videre organisering (how we roll)
@@ -61,11 +62,11 @@ Når vi som gruppe har lite erfaring med IntelliJ kan det fort oppstå problemer
 Kanban-board var heller ikke noe vi hadde brukt før, og var derfor ganske treige med å komme i gang med å bruke det. Vi innså på slutten av prosjektet at det hadde vært en god idè å bruke det slik at man kunne fordelt oppgavene på enklere måte, men også at det hadde hjulpet oss å holde frister enklere.
 
 ### Kanban bord:
-https://github.com/JohannessenJ/Gruppe-9A/projects/3 
+>https://github.com/JohannessenJ/Gruppe-9A/projects/3 
 
 ### Hvilke regler dere satt for bruke av hoved-repository og hvordan fungerte disse?
 I hoved-repositorien startet vi prosjektet med at alle kodet sammen i main branch, vi hadde lite- til null erfaring med bruk av github og branches fra før så vi var usikre på hva som var lurt og ikke lurt. Vi skjønte ganske fort at om alle skulle skrive i main branch ble det mye kluss. Etter tips fra hjelpelærer lagde alle hver sin branch som vi kalte for navnet vårt. Her kunne vi gjøre lokale endringer dersom vi jobbet hjemme eller alene og deretter pushe til GitHub og lage en pull request for dermed å merge inn i main branch. På denne måten unngikk vi konflikter og man kunne jobbe enkelt på egenhånd. 
 
 Dersom vi satt sammen og jobbet på skolen eller i gruppetimene og alle var enige om endringer som skulle gjøres skrev vi det rett i main branch ettersom vi visste at det ikke ville skape konflikter. Vi har i stor grad jobbet mye med “prøv og feile”-metoden. 
-Hva vedlegget(pdf filen) i How we roll oppgaven sier HWR-GRUPPE-9A skal inneholde:
+
 
