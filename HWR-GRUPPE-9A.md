@@ -56,7 +56,7 @@ Når vi som gruppe har lite erfaring med IntelliJ kan det fort oppstå problemer
 
 Kanban-board var heller ikke noe vi hadde brukt før, og var derfor ganske treige med å komme i gang med å bruke det. Vi innså på slutten av prosjektet at det hadde vært en god idè å bruke det slik at man kunne fordelt oppgavene på enklere måte, men også at det hadde hjulpet oss å holde frister enklere.
 
-Kanban bord:
+>Kanban bord:
 https://github.com/JohannessenJ/Gruppe-9A/projects/3 
 
 Hvilke regler dere satt for bruke av hoved-repository og hvordan fungerte disse?
