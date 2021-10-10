@@ -34,36 +34,33 @@
             position: relative;
         }
 
-        /* Fargene på prikkene samme som på visittkortene på index siden.
-         Vi har lagt merke til at fargen blir forskjellig mellom "cotona" (se under .cotona for mer info) og punktene.
-          Dette er vel fordi css og java ser ikke fargekoden likt. Vi bestemte for å bare beholde
-          de samme fargekodene fordi det ser bedre ut i koden*/
+        /* Her er det fargene vi bruker på punktene og i cotona*/
         #grey{
-            background-color:#C5CBC6;
+            background-color:gray;
         }
 
         #purple{
-            background-color:#3274;
+            background-color:purple;
         }
 
         #pink{
-            background-color:#FFC8C8;
+            background-color:pink;
         }
 
         #green{
-            background-color:#D1FFB3;
+            background-color:green;
         }
 
         #orange{
-            background-color:#F8B584;
+            background-color:orange;
         }
 
         #blue{
-            background-color:#67C7E2;
+            background-color:blue;
         }
 
         #yellow{
-            background-color:#FFDD75;
+            background-color:yellow;
         }
 
 
@@ -168,6 +165,11 @@ border-radius: 10px;
             document.querySelector("#debug").innerText = "";
 
             //Disse styrer punktene på skjermen. X aksen er hvor linjen begynner.
+            //Y styrer hvor punketet skap være på Y aksen altså høyden.
+            //R er radiusen av punktet gjør bytter du den til 10 så blir bunketet dobbelt så stort.
+            //i context.fillStyle så bytter du fargen på punketet
+            //i context.lineWidth er tykkelsen på rammen rundt prikken
+            //i context.Style er fargen på rammen rundt prikken
             var X = 200 + parseInt(data.dorn, 30);
             var Y = 20;
             var R = 5;
