@@ -32,7 +32,7 @@ I uke 40 valgte vi derimot å bytte til en annen nettside laget av et annet grup
 
 >Nettside idag: https://johannessenj.github.io/Gruppe-9A/ 
 
-Her har vi blant annet valgt å benytte oss av bilder på visittkort samt scroll funksjon (dette er forbedringer fra den tidligste skissen gruppen ble enig om å bruke) (samt at vi kodet hvert visittkort i hver sin farge for å gi visittkortene sine “egne” preg)
+*Her har vi blant annet valgt å benytte oss av bilder på visittkort samt scroll funksjon (dette er forbedringer fra den tidligste skissen gruppen ble enig om å bruke) (samt at vi kodet hvert visittkort i hver sin farge for å gi visittkortene sine “egne” preg)*
 
 Videre organisering (how we roll)
 Videre lag vi fokus på how we roll og how we roll rapport. Her la et gruppemedlem inn koden gitt av janis. 
