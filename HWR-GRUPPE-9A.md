@@ -27,7 +27,7 @@ Etter å ha fått en grunnleggende forståelse av html/css begynte gruppen indiv
 
 
 
-Her er kan du se at vi lagte visittkortene i paint også linket de inn som bilder med “img src” så ble de bare satt inn en etter en.
+Her er kan du se at vi lagde visittkortene i paint også linket de inn som bilder med “img src” så ble de bare satt inn en etter en.
 
 ### Eks: Første eksempel vi valgte å ta utgangspunkt i, og startet å jobbe med (eks laget av gruppemedlemmer)
 
