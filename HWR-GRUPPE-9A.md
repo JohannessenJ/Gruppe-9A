@@ -66,5 +66,5 @@ Hvilke regler dere satt for bruke av hoved-repository og hvordan fungerte disse?
 I hoved-repositorien startet vi prosjektet med at alle kodet sammen i main branch, vi hadde lite- til null erfaring med bruk av github og branches fra før så vi var usikre på hva som var lurt og ikke lurt. Vi skjønte ganske fort at om alle skulle skrive i main branch ble det mye kluss. Etter tips fra hjelpelærer lagde alle hver sin branch som vi kalte for navnet vårt. Her kunne vi gjøre lokale endringer dersom vi jobbet hjemme eller alene og deretter pushe til GitHub og lage en pull request for dermed å merge inn i main branch. På denne måten unngikk vi konflikter og man kunne jobbe enkelt på egenhånd. 
 
 Dersom vi satt sammen og jobbet på skolen eller i gruppetimene og alle var enige om endringer som skulle gjøres skrev vi det rett i main branch ettersom vi visste at det ikke ville skape konflikter. Vi har i stor grad jobbet mye med “prøv og feile”-metoden. 
-Hva vedlegget(pdf filen) i How we roll oppgaven sier HWR-GRUPPE-9A skal inneholde:
+
 
