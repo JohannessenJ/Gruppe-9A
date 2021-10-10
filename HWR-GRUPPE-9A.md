@@ -31,7 +31,7 @@ Her er kan du se at vi lagte visittkortene i paint også linket de inn som bilde
 
 ### Eks: Første eksempel vi valgte å ta utgangspunkt i, og startet å jobbe med (eks laget av gruppemedlemmer)
 
-![Nettside v2(images/visitt_kort_side_v2.png)
+![Nettside v2](images/visitt_kort_side_v2.png)
 
 I uke 40 valgte vi derimot å bytte til en annen nettside laget av et annet gruppemedlem, da vi usikre på hvordan problemene i forhold til plassering skulle løses. Den nye koden som ble lagt inn ble forklart for gruppen, da det var viktig at alle forstod hvordan den var satt opp og fungerte. Videre så gruppen gjennom koden og påpekte “småfeil” vi måtte rette på. Deretter finpusset vi visittkortene og knappene (endret farge/form) og hvert gruppemedlem fylte inn nødvendig tekst i sitt visittkort.
 
