@@ -1,18 +1,22 @@
-Denne filen inneholder et sammendrag av vårt arbeid med “How We Roll”-oppgaven.
+# Denne filen inneholder et sammendrag av vårt arbeid med “How We Roll”-oppgaven.
 
-Gruppemedlemmer:
-Madyan Alkarmo @medeank
-Elion Muriqi @emuriqi
-Christoffer Buvik @Chribuvik
-Julie Nyland Larsen @Julienyla 
-Psyra O Sanchez @princessPsy
-Thomas Berntsen @Thobern
-Jørgen Bache Johannessen @JohannessenJ
+**Gruppemedlemmer:
+* Madyan Alkarmo @medeank
+* Elion Muriqi @emuriqi
+* Christoffer Buvik @Chribuvik
+* Julie Nyland Larsen @Julienyla 
+* Psyra O Sanchez @princessPsy
+* Thomas Berntsen @Thobern
+* Jørgen Bache Johannessen @JohannessenJ
 
-Hvordan startet prosjektet? (organisering)
+>Repository: [Gruppe-9a](https://github.com/JohannessenJ/Gruppe-9A)
+>
+>Hjemmeside: [Hjemmeside](https://johannessenj.github.io/Gruppe-9A/index.html)
+
+### Hvordan startet prosjektet? (organisering)
 how we roll prosjektet startet da vi fikk visittkort oppgaven der vi lagde hver vårt visittkort forslag. Her misforsto vi oppgaven litt så vi endte opp med å lage valgt design i paint for så og legge dem inn i github pages som bilder. Når vi senere deltok i Janis sine kode timer der han viste oss hvordan man lage visittkort i css forstod vi at vi hadde gjort det på feil måte, og måtte ta for oss oppgaven på nytt. 
 
-Grunnleggende programmering i HTML og CSS 
+**Grunnleggende programmering i HTML og CSS 
 Før vi tok for oss visittkortet på nytt følte vi det var viktig at vi satte fokus på å sørge for at alle i gruppen lærte seg grunnleggende html/css. Dette ble gjort fordelt på fritid og gruppeundervisning. For å hjelpe hverandre på fritiden delte gruppen forskjellige nettsider/eksempler de fant nyttige.
 
 Etter å ha fått en grunnleggende forståelse av html/css begynte gruppen individuelt å kode en nettside med visittkort for å prøve seg frem, noe som hjalp å bedre vår forståelse. Her var det mange gode forslag, men alle sidene manglet betydelig “finpuss”. Gruppen bestemte seg for å ta utgangspunkt i en nettside, som vi kunne jobbe videre med.
@@ -30,9 +34,8 @@ Eks: Første eksempel vi valgte å ta utgangspunkt i, og startet å jobbe med (e
 
 I uke 40 valgte vi derimot å bytte til en annen nettside laget av et annet gruppemedlem, da vi usikre på hvordan problemene i forhold til plassering skulle løses. Den nye koden som ble lagt inn ble forklart for gruppen, da det var viktig at alle forstod hvordan den var satt opp og fungerte. Videre så gruppen gjennom koden og påpekte “småfeil” vi måtte rette på. Deretter finpusset vi visittkortene og knappene (endret farge/form) og hvert gruppemedlem fylte inn nødvendig tekst i sitt visittkort.
 
->Nettside idag: https://johannessenj.github.io/Gruppe-9A/ 
-
-*Her har vi blant annet valgt å benytte oss av bilder på visittkort samt scroll funksjon (dette er forbedringer fra den tidligste skissen gruppen ble enig om å bruke) (samt at vi kodet hvert visittkort i hver sin farge for å gi visittkortene sine “egne” preg)*
+Nettside idag: https://johannessenj.github.io/Gruppe-9A/ 
+Her har vi blant annet valgt å benytte oss av bilder på visittkort samt scroll funksjon (dette er forbedringer fra den tidligste skissen gruppen ble enig om å bruke) (samt at vi kodet hvert visittkort i hver sin farge for å gi visittkortene sine “egne” preg)
 
 Videre organisering (how we roll)
 Videre lag vi fokus på how we roll og how we roll rapport. Her la et gruppemedlem inn koden gitt av janis. 
@@ -56,7 +59,7 @@ Når vi som gruppe har lite erfaring med IntelliJ kan det fort oppstå problemer
 
 Kanban-board var heller ikke noe vi hadde brukt før, og var derfor ganske treige med å komme i gang med å bruke det. Vi innså på slutten av prosjektet at det hadde vært en god idè å bruke det slik at man kunne fordelt oppgavene på enklere måte, men også at det hadde hjulpet oss å holde frister enklere.
 
->Kanban bord:
+Kanban bord:
 https://github.com/JohannessenJ/Gruppe-9A/projects/3 
 
 Hvilke regler dere satt for bruke av hoved-repository og hvordan fungerte disse?
